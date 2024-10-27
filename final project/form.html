@@ -13,7 +13,7 @@
             const otherNames = ['Hammy', 'Chirp', 'Bunny', 'Goldie', 'Teddy'];
 
             const nameDropdown = document.getElementById("pet-name");
-            nameDropdown.innerHTML = ""; // Clear previous options
+            nameDropdown.innerHTML = ""; 
 
             let namesToShow = [];
 
@@ -31,24 +31,29 @@
                 option.textContent = name;
                 nameDropdown.appendChild(option);
             });
-            nameDropdown.disabled = namesToShow.length === 0; // Enable or disable based on selection
+            nameDropdown.disabled = namesToShow.length === 0; 
         }
 
         function handleSubmit(event) {
-            event.preventDefault(); // Prevent default form submission
-            alert("Form submitted successfully!"); // Show success message
-            window.location.href = "index.html"; // Redirect to the home screen
+            event.preventDefault(); 
+            alert("Form submitted successfully!"); 
+            window.location.href = "index.html"; 
         }
     </script>
 </head>
 <body>
 
-    <!-- Header Section -->
     <header>
         <div class="header-container">
             <div class="logo">
-                <h1>PetAdopt</h1>
+                <h1>PetConnect</h1>
             </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="form.html">Adopt a Pet</a></li>
+                    <li><a href="aboutus.html" class="active">About Us</a></li>
+                </ul>
         </div>
     </header>
 
